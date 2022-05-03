@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{subfig}
-
+\usepackage{hyperref}
 %References
 \usepackage{natbib}
 %IMPORTANT use https://www.citationmachine.net/ if you need to generate references!
@@ -52,13 +52,18 @@
 
 \setlength{\droptitle}{-8.5em} %Up, near the top but not too high
 
-\title{Assignment Number - Subject}
-\author{Student Name (StudentNo.)}
-\date{Month Year}
+%Section Heading formatting
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+\title{Title}
+\author{Author}
+\date{Date}
 
 \begin{document}
 	\maketitle
-	%Sets to Harvard Style and links the references file
-	\bibliographystyle{agsm}
+
 	\bibliography{references}
 \end{document}
